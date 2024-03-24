@@ -27,7 +27,7 @@ def classify_svm(img):
 # Results
 ## Task 1
 Below are the output images for the top 3 predicted classes.
-![Local Image](output/task1/headphones.png)
+![Local Image](output/task1/headphone.png)
 
 ![Local Image](output/task1/scissors.png)
 
