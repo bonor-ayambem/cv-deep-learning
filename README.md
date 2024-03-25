@@ -23,12 +23,27 @@ def classify_svm(img):
     return img
 ```
 ## Task 2
+Task 2 is implemented simply by running six different configurations of the level of the CNN codes and SVM kernel, and testing it on 3 images each (camera, headphones, and scissors). The results are displayed and discussed below.
 
 # Results
 ## Task 1
 Below are the output images for the top 3 predicted classes.
-![Local Image](output/task1/headphone.png)
 
-![Local Image](output/task1/scissors.png)
+<img src="output/task1/headphone.png" width="350" height="350">
 
-![Local Image](output/task1/cellphone.png)
+<img src="output/task1/scissors.png" width="350" height="350">
+
+<img src="output/task1/cellphone.png" width="350" height="350">
+
+## Task 2
+Define linear, poly, and rbf. also describe fc1 and fc2 and the differences between the configurations. 
+|              | linear | poly | rbf|
+|--------------|-----------------|-----------------|-------|
+| **fc1** |<img src="output/task2/fc1_linear/h1.png" width="100" height="100">| <img src="output/task2/fc1_poly/h2.png" width="100" height="100">|<img src="output/task2/fc1_rbf/h3.png" width="100" height="100">|
+| **fc2** |<img src="output/task2/fc2_linear/h4.png" width="100" height="100">|<img src="output/task2/fc2_poly/h5.png" width="100" height="100">|<img src="output/task2/fc2_rbf/h6.png" width="100" height="100">|
+
+Explanation of figures
+
+Which configuration is the best? How would you explain why this selected configuration works best?
+
+
