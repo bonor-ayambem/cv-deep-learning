@@ -22,12 +22,20 @@ def classify_svm(img):
         cv2.putText(img, f"{clf.classes_[index]}: {decision_scores[0][index]}", (15, 25 + i*30), font, 1, (0, 255, 0), 2, cv2.LINE_AA)
     return img
 ```
+
 ## Task 2
 Task 2 is implemented simply by running six different configurations of the level of the CNN codes and SVM kernel, and testing
 it on 3 images each (camera, headphones, and scissors). The results are displayed and discussed below.
+
 ## Task 3
 Task 3 is implemented by expanding `my_object_list` to include 7 elements in addition to the already 3 elements there. We run
 the SVM with linear kernel and fc1, since that was concluded to be the best configuration from Task 2.
+
+## Task 4
+In creating and training my own Convolutional Neural Network, I utilized the already provided LeNet. I attempted to enhance it 
+by adding more convolutional layers or fully connected layers, but found that that only hurt its performance. I wrote 
+`train_model()` to train the LeNet model provided and visualize its results. The result of that training is provided below. 
+To improve accuracy, I trained the model for 100 epochs
 
 # Results
 ## Task 1
@@ -93,3 +101,10 @@ the initial dataset. It indicates that the features are robust to variations and
 <img src="output/task3/headphone.png" width="250" height="250">
 <img src="output/task3/scissors.png" width="250" height="250">
 <img src="output/task3/cellphone.png" width="250" height="250">
+
+## Task 4
+The graph below for training and validation accuracy show that the model learned the data sufficiently without overfitting.
+
+<img src="output/task4/val_graph.png" width="500" height="250">
+
+We arrived at an accuracy of 73.94%, and a validation accuracy of about 60%
