@@ -1,4 +1,11 @@
 # Introduction
+ This project delves into the practical application and comparison of different machine learning strategies and CNN architectures
+ to address specific image classification tasks. Through a series of tasks, this study aims to explore the efficacy of Support 
+ Vector Machines (SVMs) with varying kernel functions and feature extraction techniques, as well as the impact of modifying a 
+ conventional CNN architecture on model performance.
+
+The motivation behind this investigation is to understand how modifications to the SVM's kernel type and the level of CNN codes 
+influence classification accuracy; and to experiment with enhancing a traditional CNN model, LeNet, by introducing additional layers. 
 
 # Implementation
 ## Task 1
